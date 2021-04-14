@@ -1,11 +1,11 @@
-enum ColorsCoin {
+public enum ColorsCoin {
     case greenCoin
     case grayCoin
     case blackCoin
 }
 
 extension ColorsCoin {
-    var value: UIColor {
+     public var value: UIColor {
         get {
             switch self {
             case .greenCoin:
