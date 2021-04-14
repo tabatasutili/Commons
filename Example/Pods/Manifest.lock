@@ -1,0 +1,16 @@
+PODS:
+  - Commons (0.1.0)
+
+DEPENDENCIES:
+  - Commons (from `../`)
+
+EXTERNAL SOURCES:
+  Commons:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Commons: ece3cfae1123185556c05aebb9f511b1162a313a
+
+PODFILE CHECKSUM: 1754379e155109e77ea1bebc788b2eb02dfb7db8
+
+COCOAPODS: 1.10.1

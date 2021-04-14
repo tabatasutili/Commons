@@ -28,9 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		175BFC420EB431D94B2D9096 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		175BFC420EB431D94B2D9096 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		25D8D9344A6403AB49542B3B /* Pods-Commons_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Commons_Tests.release.xcconfig"; path = "Target Support Files/Pods-Commons_Tests/Pods-Commons_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		267D3B02D82CEE836053B869 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		267D3B02D82CEE836053B869 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3C3800B28A7F17817E5B7816 /* Pods-Commons_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Commons_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Commons_Tests/Pods-Commons_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		55CAB13CC0B234718AB54202 /* Pods_Commons_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Commons_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* Commons_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Commons_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,7 +43,7 @@
 		607FACE51AFB9204008FA782 /* Commons_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Commons_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6C266BE327E3A4C6AF4660CC /* Commons.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Commons.podspec; path = ../Commons.podspec; sourceTree = "<group>"; };
+		6C266BE327E3A4C6AF4660CC /* Commons.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Commons.podspec; path = ../Commons.podspec; sourceTree = "<group>"; };
 		921F2080A98CDF14ED35E93A /* Pods_Commons_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Commons_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B01CB907A0A1E1D9A89BBF9E /* Pods-Commons_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Commons_Example.release.xcconfig"; path = "Target Support Files/Pods-Commons_Example/Pods-Commons_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C635C511E5D020BEA4E853C1 /* Pods-Commons_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Commons_Example.debug.xcconfig"; path = "Target Support Files/Pods-Commons_Example/Pods-Commons_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -156,7 +156,6 @@
 				3C3800B28A7F17817E5B7816 /* Pods-Commons_Tests.debug.xcconfig */,
 				25D8D9344A6403AB49542B3B /* Pods-Commons_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -478,6 +478,11 @@
 			baseConfigurationReference = C635C511E5D020BEA4E853C1 /* Pods-Commons_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Commons\"",
+					"$(SRCROOT)",
+				);
 				INFOPLIST_FILE = Commons/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -493,6 +498,11 @@
 			baseConfigurationReference = B01CB907A0A1E1D9A89BBF9E /* Pods-Commons_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Commons\"",
+					"$(SRCROOT)",
+				);
 				INFOPLIST_FILE = Commons/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;

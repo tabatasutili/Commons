@@ -1,6 +1,6 @@
-use_frameworks!
+# use_frameworks!
 
-platform :ios, '9.0'
+platform :iOS, '10.0'
 
 target 'Commons_Example' do
   pod 'Commons', :path => '../'
