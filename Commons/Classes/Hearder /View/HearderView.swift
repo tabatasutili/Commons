@@ -10,8 +10,6 @@ import UIKit
 
 public class HearderView: UIView {
     
-
-
     @IBOutlet weak var titleHeader: UILabel!
     @IBOutlet weak var dataHeader: UILabel!
     

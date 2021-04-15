@@ -1,5 +1,5 @@
 //
-//  HearderView.swift
+//  Search.swift
 //  Commons
 //
 //  Created by Tabata Sabrina Sutili on 14/04/21.
@@ -7,11 +7,7 @@
 import Foundation
 import UIKit
 
-
-public class HearderView: UIView {
-    
-    @IBOutlet weak var titleHeader: UILabel!
-    @IBOutlet weak var dataHeader: UILabel!
+public class Search: UIView {
     
     var view: UIView!
     override init(frame: CGRect) {
@@ -22,10 +18,9 @@ public class HearderView: UIView {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
-    
 }
 
-extension HearderView {
+extension Search {
     
     public static var bundleUI: Bundle {
         var bundle: Bundle
@@ -50,10 +45,3 @@ extension HearderView {
     }
 }
 
-extension HearderView {
-    public func setupLabels(title: String, data: String) {
-        self.titleHeader.text = title
-        self.dataHeader.text = data
-        
-    }
-}

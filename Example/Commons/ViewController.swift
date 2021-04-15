@@ -12,21 +12,30 @@ import Commons
 class ViewController: UIViewController {
 
   
+    @IBOutlet weak var viewColor: UIView!
     @IBOutlet weak var stack: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let cor = ColorsCoin.grayCoin.value
-        print(cor)
+        viewColor.backgroundColor = ColorsCoin.greenCoin.value
+        
         setupUI()
        
     }
 
     func setupUI() {
-
+        
         let header = HearderView.fromNib() // .fromNib()
         header.setupLabels(title: "MOEDA", data: "HOJE")
         stack.addArrangedSubview(header)
+        
+        let search = Search.fromNib() // .fromNib()
+        stack.addArrangedSubview(search)
+        
+        
+        
+        
+        
     }
     
 
