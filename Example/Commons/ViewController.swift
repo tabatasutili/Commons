@@ -11,15 +11,24 @@ import Commons
 
 class ViewController: UIViewController {
 
+  
+    @IBOutlet weak var stack: UIStackView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let cor = ColorsCoin.grayCoin.value
         print(cor)
+        setupUI()
+       
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+    func setupUI() {
+
+        let header = HearderView.fromNib() // .fromNib()
+        header.setupLabels(title: "MOEDA", data: "HOJE")
+        stack.addArrangedSubview(header)
     }
+    
 
 }
 
