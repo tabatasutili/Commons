@@ -1,3 +1,5 @@
+import UIKit
+
 public enum ColorsCoin {
     case greenCoin
     case grayCoin
@@ -20,3 +22,7 @@ extension ColorsCoin {
 }
 
 // ColorsCoin.grayCoin.value
+
+
+//@available(iOS 9.1, *)
+//public let star = UIApplicationShortcutIcon.IconType.favorite

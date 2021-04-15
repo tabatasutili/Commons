@@ -8,6 +8,7 @@ import Foundation
 import UIKit
 
 
+
 public class HearderView: UIView {
     
     @IBOutlet weak var titleHeader: UILabel!

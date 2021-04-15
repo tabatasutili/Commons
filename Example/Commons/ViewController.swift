@@ -9,7 +9,7 @@
 import UIKit
 import Commons
 
-class ViewController: UIViewController {
+class ViewController: UIViewController{
 
   
     @IBOutlet weak var viewColor: UIView!
@@ -31,7 +31,6 @@ class ViewController: UIViewController {
         
         let search = Search.fromNib() // .fromNib()
         stack.addArrangedSubview(search)
-        
         
         
         

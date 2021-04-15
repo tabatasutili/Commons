@@ -40,6 +40,7 @@
             <constraints>
                 <constraint firstItem="Bea-wN-hQL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="6Ze-Lp-lmc"/>
                 <constraint firstAttribute="bottom" secondItem="Bea-wN-hQL" secondAttribute="bottom" id="AlL-O0-IpA"/>
+                <constraint firstItem="Bea-wN-hQL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="U60-Zk-qFy"/>
                 <constraint firstItem="Bea-wN-hQL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eMP-cy-sf4"/>
                 <constraint firstItem="Bea-wN-hQL" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="yXf-vc-ePP"/>
             </constraints>
