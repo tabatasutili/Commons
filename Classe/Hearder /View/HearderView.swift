@@ -58,3 +58,15 @@ extension HearderView {
         
     }
 }
+
+
+// labelData?.text = Date().dateString()
+//    func dateString() -> String {
+//        let date = Date()
+//        let formatter = DateFormatter()
+//        formatter.dateFormat = "d MMM yyyy"
+//        let result = formatter.string(from: date)
+//        return result
+//
+//    }
+

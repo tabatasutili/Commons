@@ -9,16 +9,19 @@
 import UIKit
 import Commons
 
+
 class ViewController: UIViewController{
 
-  
+    @IBOutlet weak var imageView: UIImageView!
+    
     @IBOutlet weak var viewColor: UIView!
     @IBOutlet weak var stack: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewColor.backgroundColor = ColorsCoin.greenCoin.value
+        //viewColor.backgroundColor = ColorsCoin.greenCoin.value
         
+        imageView.image = UIImage(named: "star")
         setupUI()
        
     }
